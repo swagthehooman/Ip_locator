@@ -1,0 +1,48 @@
+.address-section{
+    margin: 3rem 0 0 0;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.address-item{
+    padding: 0.5rem;
+    width: 25%;
+}
+
+.address-item:nth-child(2){
+    border-right: 1px solid hsl(0, 0%, 59%);
+}
+
+.address-item>label{
+    color: hsl(0, 0%, 59%);
+}
+
+.address-item>p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .address-section{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .address-item{
+        width: 100%;
+    }
+
+    .address-item>p{
+        font-size: 1.2rem;
+    }
+
+    .address-item:nth-child(2){
+        border-right: 0;
+    }
+}
